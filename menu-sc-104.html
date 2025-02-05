@@ -1,0 +1,1440 @@
+<style>
+  .header-nav a, header-title-text a, .header-title-text a {
+    color: #266041 !important;
+}
+
+/* Tab Start */
+.warpper{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tab{
+    cursor: pointer;
+    display:inline-block;
+    border-radius:3px 3px 0px 0px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.panels{
+    background:##fffefa;
+    min-height:200px;
+    width:100%;
+    border-radius:3px;
+    overflow:hidden;
+    padding:20px;  
+}
+.panel{
+    display:none;
+    animation: fadein .8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.panel-title{
+    font-size:1.5em;
+    font-weight:bold
+}
+.radio{
+  display:none;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel{
+    display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab{
+    background:##fffefa;
+    color:#266041;
+    border-bottom: 3px solid #266041;
+}
+
+/* Tab End */
+/*
+  .header-announcement-bar-wrapper {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+}*/
+body, .section-background {
+    background-color: #fffefb !important;
+}
+body, .page-section {
+    color: unset !important;
+}
+.documenu--three--section table {
+    margin-top: 2rem;
+}
+.content-wrapper {
+    padding-top: unset !important;
+}
+.documenu--three--section {
+    position: relative;
+}
+.documenu--three--section .document {
+    width: 29.33%;
+    float: left;
+    margin: 2% !important;
+}
+.documenu--three--section .document h1 {
+    font-family: shelby;
+}
+h1 {
+    color: #266041;
+    text-align: center;
+    margin: 0 !important;
+}
+.inner_box {
+    border: 2px dotted #417c5b;
+    margin: -1rem -2rem !important;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    margin-bottom: 3rem !important;
+}
+.inner_box_one {
+    border: 2px dotted #417c5b;
+    padding: 1.5rem 2rem;
+    ;
+}
+.breakfast--anytime {
+    margin-bottom: 30px;
+}
+.text-center, .samuels_sandwiches, .plates, .bagels_image {
+    text-align: center;
+}
+.samuels_sandwiches img, .plates img {
+    max-width: 200px !important;
+}
+.bagels_image img {
+    max-width: 130px !important;
+    margin-top: 15px !important;
+    margin-right: 15px;
+}
+.plates {
+  margin-top: 2rem;
+}
+.breakfast--anytime {
+    overflow: hidden;
+}
+.breakfast--anytime p {
+    margin: 0 !important;
+    font-size: 12px;
+    color: #6c757d;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+
+.item_list {
+    padding-bottom:20px;
+}
+.items {
+    justify-content: space-between!important;
+    display: flex!important;
+    border-bottom: 2px dotted #417c5b;
+}
+.item_title {
+    text-align: left;
+    position: relative;
+}
+.item_title_span {
+    position: relative;
+    background: #fffefb;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+}
+.item_price {   
+    position: relative;
+    /*  text-align: center; */
+    background: #fffefb;
+    display: inline-block;
+    padding-left: 10px;
+}
+.double_line .item_title_span {
+    bottom: -10px;
+}
+.double_line .item_price {
+    bottom: -25px;
+}
+.single_line .item_title_span {
+    bottom: -10px;
+}
+.single_line .item_price {
+    bottom: -10px;
+}
+.items .item_title_span small {
+    padding-left: 20px;
+    font-size: 15px;
+    text-transform: lowercase;
+}
+
+.documenu--drink--section .section--drink.document {
+    max-width: 574px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:2rem;
+}
+
+.documenu--drink--section .document h1, .tabs h1 {
+    font-family: shelby;
+}
+
+  /*
+.documenu--drink--section .item_price {
+    font-size: 13px;
+}
+  */
+/*.section--drink .items {
+    border-bottom: none;
+}*/
+.col.sqs-col-12.span-12 .sqs-block-content {
+    position: relative;
+    overflow: hidden;
+}
+.bg_image_logo {
+ /* position: absolute; */
+ /* top: -10px; */
+ /* right: -211px; */
+ /* width: 506px; */
+    transform: rotate(-28deg);
+    opacity: 0.1;
+    padding: 1rem;
+}
+  /*@media(max-width:1201px) {
+    .bg_image_logo {
+      top: -35px;
+    right: -235px;
+    }
+  }*/
+.header-display-desktop {
+    padding-left:2rem !important;
+}
+.row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.documenu--drink--section .section--drink.document .breakfast--anytime .row .small_item {
+    text-align: center;
+}
+.documenu--drink--section .section--drink.document .breakfast--anytime .row .small_item .item_title, .documenu--drink--section .section--drink.document .breakfast--anytime .item_title .item_title_span .this_title{
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+}
+.documenu--drink--section .section--drink.document .breakfast--anytime .row .small_item .item_title {
+    margin-top: 10px;
+}
+.documenu--drink--section .section--drink.document .breakfast--anytime .items {
+    border-bottom: unset;
+    margin-bottom: 10px;    
+}
+.documenu--drink--section .section--drink.document .breakfast--anytime .items .item_title_span small {
+    padding-left: 0;
+    text-transform: unset;
+}
+.documenu--drink--section .section--drink.document .breakfast--anytime .items .item_price {
+    font-size: 18px;
+}
+.documenu--drink--section .section--drink.document .breakfast--anytime .item_ingredient {
+    line-height: 17px;
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+
+@media(max-width:991px) {
+    .documenu--three--section .document {
+        width: 100% !important;
+        margin: 0% !important;
+    }
+    .documenu--three--section {
+        overflow: hidden !important;
+    }
+    .inner_box {
+        margin: 0px !important;
+        padding: 1rem;
+    }
+    .section--one.document .inner_box_one {
+        margin-bottom: 20px;
+    }
+
+    .col-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .documenu--drink--section .section--drink.document .breakfast--anytime .plates {
+        margin: 2rem 0;
+    }
+
+    .tab {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+}
+@media(min-width:768px) and (max-width:991px) {
+    .breakfast--anytime {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 40px;
+    }
+    .col.sqs-col-12.span-12 .sqs-block-content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .page-section.horizontal-alignment--right>.content-wrapper {
+        justify-content: center !important;
+    }
+
+    .col-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .documenu--drink--section .section--drink.document .breakfast--anytime .plates {
+        margin: 2rem 0;
+    }
+
+    .tab {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+@media(max-width:599px) {
+    .header .header-title-text {
+        margin-left: 1rem;
+    }
+    .documenu--three--section .document {
+        width: 100% !important;
+        margin: 0% !important;
+        padding: 10px 1px !important;
+    } 
+    .inner_box {
+        margin: 0px !important;
+        padding: 1rem;
+    }
+    .section--one.document .inner_box_one {
+      margin-bottom: 20px;
+    }
+    /*.bg_image_logo {
+      top: 35px !important;
+      right: -148px !important;
+      width: 350px !important;
+   }*/
+
+   .col-6 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .documenu--drink--section .section--drink.document .breakfast--anytime .plates {
+        margin: 2rem 0;
+    }
+
+    .tab {
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+    }
+
+}
+
+
+
+
+
+
+</style>
+
+
+<div class="warpper">
+    <input class="radio" id="one" name="group" type="radio" checked>
+    <input class="radio" id="two" name="group" type="radio">
+    <input class="radio" id="three" name="group" type="radio">
+    <div class="tabs">
+        <label class="tab" id="one-tab" for="one"><h1>Meals</h1></label>
+        <label class="tab" id="two-tab" for="two"><h1>Drinks</h1></label>
+        <label class="tab" id="three-tab" for="three"><h1>Early Morning</h1></label>
+    </div>
+    <div class="panels">
+        <div class="panel" id="one-panel">
+
+
+
+            <!-- documenu--three--section start -->
+            <div class="documenu--three--section">
+
+                <!-- section--one start -->
+                <div class="section--one document">
+                    <div class="breakfast--anytime">
+                        <h1>All Day</h1>
+                        <div class="item_list">
+                            <div class="items double_line">
+                                <div class="item_title"><span class="item_title_span">CHALLAH EGG SANDWHICH
+                                    <br><small>fried egg, bacon, cheddar</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">10</div>
+                                </div>
+
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">SALAMI & EGG<br><small>potato, toast</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">18</div>
+                                </div>
+
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">CHOPPED LIVER TOAST<br><small>poached egg, shallot, sherry</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">14</div>
+                                </div>
+
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">PANCAKES<br><small>butter, maple syrup</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">16</div>
+                                </div>
+
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">CHALLAH FRENCH TOAST<br><small>butter, maple syrup</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">16</div>
+                                </div>
+
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">EGGS YOUR WAY<br><small>two eggs, bacon, potato, toast</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">18</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="breakfast--anytime">
+                            <div class="samuels_sandwiches">
+                                <img src="https://static1.squarespace.com/static/621515dbc75b033440da17e0/t/62b2eea9ef9ba32836fbf8c7/1655893673930/hgrthrt.png">
+                            </div>
+                            <h1>
+                                Samuel’s Sandwiches
+                            </h1>
+                            <p>ALL SANDWICHES SERVED WITH FRIES..</p>
+
+
+                            <div class="item_list">
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">TUNA MELT<br><small>tomato, swiss, honey wheat</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">12</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">BLT<br><small>bacon, lettuce, tomato, challah</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+
+                                    <div class="item_price">12</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">REUBEN<br><small>sauerkraut, swiss, thousand island</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">16</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">CORNED BEEF SPECIAL<br><small>coleslaw, swiss, russian dressing</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">14</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">TURKEY CLUB<br><small>bacon, lettuce, tomato, sourdough</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">18</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">PASTRAMI TRIPLE DECKER<br><small>mayo, tomato, bacon</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">18</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">BRISKET & CARROTS<br><small>horseradish, aioli, corn rye</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">12</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">ROAST BEEF SPECIAL<br><small>watercress, horseradish, sour cream</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">12</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="breakfast--anytime">
+                            <h1>
+                                Butcher Sandwiches
+                            </h1>
+                            <p>HANDCUT SERVED WITH MUSTARD..</p>
+                            <div class="item_list">
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">PASTRAMI&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">16</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">CORNED BEEF&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">14</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">TURKEY PASTRAMI&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">14</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">BRISKET&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">12</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">ROAST BEEF&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">12</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="inner_box_one">
+                            <h1>Breads</h1>
+                            <p class="text-center">corn rye, deli rye, sourdough, honey wheat, challah</p>
+                        </div>
+
+                        
+                    </div>
+                    <!-- section--one end -->
+
+
+                    <!-- section--two start -->
+                    <div class="section--two document">
+
+                        <!-- inner_box start -->
+                        <div class="inner_box">
+                            <div class="breakfast--anytime">
+                                <h1>Samuel's Towers</h1>          
+                                <p>all selections are served with a bagel, cream cheese, tomato, caper, cucumber and onion</p>
+                                <div class="item_list">
+                                    <div class="item_list">
+                                        <div class="items single_line">
+                                            <div class="item_title"><span class="item_title_span">SALMON SALAD&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                            <div class="item_price">12</div>
+                                        </div>
+                                        <div class="items single_line">
+                                            <div class="item_title"><span class="item_title_span">TUNA SALAD&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                            <div class="item_price">16</div>
+                                        </div>
+                                        <div class="items single_line">
+                                            <div class="item_title"><span class="item_title_span">WHITEFISH SALAD&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                            <div class="item_price">13</div>
+                                        </div>
+                                        <div class="items single_line">
+                                            <div class="item_title"><span class="item_title_span">EGG SALAD&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                            <div class="item_price">13</div>
+                                        </div>
+                                        <div class="items single_line">
+                                            <div class="item_title"><span class="item_title_span">PASTRAMI SALMON&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                            <div class="item_price">14</div>
+                                        </div>
+                                        <div class="items single_line">
+                                            <div class="item_title"><span class="item_title_span">NOVA LOX SALMON&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                            <div class="item_price">16</div>
+                                        </div>
+                                        <div class="items single_line">
+                                            <div class="item_title"><span class="item_title_span">SABLEFISH&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                            <div class="item_price">16</div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="breakfast--anytime">
+                                    <h1>Deluxe</h1>
+                                    <div class="item_list">
+                                        <div class="items double_line">
+                                            <div class="item_title"><span class="item_title_span">PICK TWO<br><small>CHOOSE FROM ABOVE</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                            <div class="item_price">28</div>
+                                        </div>
+                                        <div class="items double_line">
+                                            <div class="item_title"><span class="item_title_span">PICK FIVE<br><small>CHOOSE FROM ABOVE</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                            <div class="item_price">68</div>
+                                        </div>
+                                        <div class="items single_line">
+                                            <div class="item_title"><span class="item_title_span">PASTRAMI, PASTRAMI, PASTRAMI&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                            <div class="item_price">48</div>
+                                        </div>
+                                        <div class="items double_line">
+                                            <div class="item_title"><span class="item_title_span">DELUXE PASTRY BASKET<br><small>CHEF'S SELECTION OF SIX</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                            <div class="item_price">18</div>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- inner_box end -->
+
+                        <div class="breakfast--anytime">
+                            <div class="plates">
+                                <img src="https://static1.squarespace.com/static/621515dbc75b033440da17e0/t/62b2efc95fc2fd3f210295cb/1655893961966/retert.png">
+                            </div>
+                            <div class="breakfast--anytime">
+                                <h1>Caviar</h1>
+                                <p>add to any dish</p>
+
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">KALUGA&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">12/48</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">OSETRA&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">18/64</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">TROUT ROE&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">8/32</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="breakfast--anytime">
+
+                            <h1>Sides</h1>
+                            <div class="item_list">
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">FRIES&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">8</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">BREAKFAST POTATOES&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">8</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">PICKLES&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">4</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">HOT DOG&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">6</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">SIDE SALAD&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">6</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">AVOCADO&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">4</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">BACON&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">8</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">SAUSAGE&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">8</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">YOGURT & BERRIES&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">9</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">BIALY&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">3</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">BAGEL&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">3</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">CREAM CHEESE<br><small>plain, veggie, smoked salmon, scallion</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">2</div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- section--two end -->
+
+                    <!-- section--three start -->
+                    <div class="section--three document">
+
+
+                        <div class="breakfast--anytime">
+                            <h1>Starters</h1>
+                            <div class="item_list">
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">TUNA TARTARE<br><small>olive oil, lemon</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">18</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">PIGS IN A BLANKET<br><small>mustard</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">16</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">AVOCADO TOAST<br><small>everything spice</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">14</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">POTATO LATKES<br><small>sour cream, apple sauce</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">10</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">PIEROGI<br><small>farmer's cheese, onion</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">12</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">KNISH<br><small>potato, onion</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">4</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="breakfast--anytime">
+                            <h1>Salads</h1>
+                            <div class="item_list">
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">CAESAR<br><small>breadcrumb, anchovy, lemon</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">13</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">CHOPPED<br><small>chickpea, provolone, pepperoncini</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">14</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">COBB<br><small>chicken, bacon, avocado</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">10</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">GREEK<br><small>olive, tomato, feta</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">13</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">WALDORF<br><small>grape, walnut, lettucebread</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">15</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- inner_box_one start -->
+                        <div class="bagels inner_box_one" style="position: relative; margin-bottom: 3rem;">
+                            <div style="width: 80%;">
+                                <h1>Bagels</h1>
+                                <p class="text-center">poppy, sesame, everything, plain</p>
+                            </div>
+                            <div style="position: absolute;top: 0;right: 0;">
+                                <div class="bagels_image">
+                                    <img src="https://static1.squarespace.com/static/621515dbc75b033440da17e0/t/62b2f0513e49983621a57bcd/1655894097521/uiooewe.png">
+                                    <!-- inner_box_one end -->
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="breakfast--anytime">
+                            <h1>Plates</h1>
+                            <div class="item_list">
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">CHICKEN POT PIE<br><small>carrot, pea, puff pastry</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">21</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">FRIED CHICKEN<br><small>hot honey, slaw, cheddar biscuit</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">23</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">CHOPPED STEAK<br><small>mushrooms, onions, gravy</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">24</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">BROOK TROUT<br><small>brown butter, lemon, caper</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">26</div>
+
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="bg_image_logo">
+                            <img src="https://static1.squarespace.com/static/621515dbc75b033440da17e0/t/62c54fa6afcda94c6b975936/1657098155081/Asset+8%40300x.png" class=""/>
+                        </div>
+
+                    </div>
+                    <!-- section--three end -->
+
+
+                </div>
+                <!-- documenu--three--section end -->
+
+
+
+        </div>
+
+        <div class="panel" id="two-panel">
+            <div class="documenu--drink--section">
+                <div class='section--drink document'>
+                    <div class="breakfast--anytime">
+                        <h1>
+                            Cocktails
+                        </h1>
+                        <div class="item_list row">
+                            <div class="col-6">
+                                <div class="small_item">
+                                    <div class="item_title">Bloody Mary <span>10</span></div>
+                                    <div class="item_ingredient">vodka, tomato, chili</div>
+                                </div>
+                                <div class="small_item">
+                                    <div class="item_title">Cosmo Kramer <span>10</span></div>
+                                    <div class="item_ingredient">vodka, manischewitz, verjus</div>
+                                </div>
+                                <div class="small_item">
+                                    <div class="item_title">Hava Tequila Hava <span></span>10</div>
+                                    <div class="item_ingredient">tequila, grapefruit, soda</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="small_item">
+                                    <div class="item_title">Old Fashioned <span>12</span></div>
+                                    <div class="item_ingredient">bourbon, rye, manischewitz</div>
+                                </div>
+                                <div class="small_item">
+                                    <div class="item_title">Celery Spritz <span>12</span></div>
+                                    <div class="item_ingredient">aloe vera, lime, celery soda</div>
+                                </div>
+                                <div class="small_item">
+                                    <div class="item_title">Mimosa <span>12</span></div>
+                                    <div class="item_ingredient">orange, grapefruit, 50/50</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="breakfast--anytime">
+                        <div class="plates">
+                            <img src="https://static1.squarespace.com/static/621515dbc75b033440da17e0/t/62eb68e3f14e662c06019584/1659594979396/Cocktail+Menu_8.3.22.png">
+                        </div>
+                        <h1>
+                            Non Alcoholic
+                        </h1>
+                        <div class="item_list row">
+                            <div class="col-6">
+                                <div class="small_item">
+                                    <div class="item_title">Egg Cream <span>7</span></div>
+                                </div>
+                                <div class="small_item">
+                                    <div class="item_title">Doc Brown's Float <span>8</span></div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="small_item">
+                                    <div class="item_title">Lemonade <span>5</span></div>
+                                </div>
+                                <div class="small_item">
+                                    <div class="item_title">Lipton's Iced Tea <span>4</span></div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="small_item">
+                                    <div class="item_title">Doc Brown's Soda <span>5</span></div>
+                                    <div class="item_ingredient">root beer, cel-ray, black cherry,<br>cream, ginger ale</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="breakfast--anytime">
+                        <h1>Draft Beer</h1>
+                        <div class="item_list">
+                            <div class="items double_line">
+                                <div class="item_title"><span class="item_title_span"><span class="this_title">Von Trapp Kolsch</span>
+                                    <br><small>Stowe, VT 5.0%</small>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                </div>
+                                    <div class="item_price">7</div>
+                                </div>
+
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span"><span class="this_title">New Trails Broken Heels IPA</span><br><small>Neshaminy Creek, PA 5.2%</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">8</div>
+                                </div>
+
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span"><span class="this_title">Neshaminy Creel J.A.W.N. Pale Ale</span><br><small>Williamsport, PA 7.0%</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">7</div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+
+
+                        <div class="breakfast--anytime">
+                        <h1>Wine By The Glass</h1>
+                        <div class="item_list">
+                            <div class="items double_line">
+                                <div class="item_title"><span class="item_title_span"><span class="this_title">Prosecco</span>
+                                    <br><small>Acinum Extra Brut, Veneto, NV</small>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                </div>
+                                    <div class="item_price">11</div>
+                                </div>
+
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span"><span class="this_title">Sparkling Rose</span>
+                                        <br><small>Conde de Subirats Cava Brut, Catalonia, NV</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">11</div>
+                                </div>
+
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span"><span class="this_title">Pinot Grigio</span>
+                                        <br><small>Spinelli `Terra di Chieti`, Abruzzo, 2020</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">9</div>
+                                </div>
+
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span"><span class="this_title">Chardonnay</span>
+                                        <br><small>Canyon Oaks, California, 2020</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">9</div>
+                                </div>
+
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span"><span class="this_title">Rose</span>
+                                        <br><small>Spinelli, Abruzzo, 2020</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">9</div>
+                                </div>
+
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span"><span class="this_title">Pinot Noir</span>
+                                        <br><small>Avia, Slovenia, 2020</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">9</div>
+                                </div>
+
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span"><span class="this_title">Cabernet Sauvignon (draft)</span>
+                                        <br><small>Raywood, California, 2020</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">9</div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+
+
+                        
+
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Early Morning Start -->
+        <div class="panel" id="three-panel">
+
+
+            
+            <div class="documenu--three--section">
+
+                <!-- section--one start -->
+                <div class="section--one document">
+                    <div class="breakfast--anytime">
+                        <h1>All Day</h1>
+                        <div class="item_list">
+                            <div class="items double_line">
+                                <div class="item_title"><span class="item_title_span">CHALLAH EGG SANDWHICH
+                                    <br><small>fried egg, bacon, cheddar</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">10</div>
+                                </div>
+
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">SALAMI & EGG<br><small>potato, toast</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">18</div>
+                                </div>
+
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">CHOPPED LIVER TOAST<br><small>poached egg, shallot, sherry</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">14</div>
+                                </div>
+
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">PANCAKES<br><small>butter, maple syrup</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">16</div>
+                                </div>
+
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">CHALLAH FRENCH TOAST<br><small>butter, maple syrup</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">16</div>
+                                </div>
+
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">EGGS YOUR WAY<br><small>two eggs, bacon, potato, toast</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">18</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="breakfast--anytime">
+                            <div class="samuels_sandwiches">
+                                <img src="https://static1.squarespace.com/static/621515dbc75b033440da17e0/t/62b2eea9ef9ba32836fbf8c7/1655893673930/hgrthrt.png">
+                            </div>
+                            <h1>
+                                Samuel’s Sandwiches
+                            </h1>
+                            <p>ALL SANDWICHES SERVED WITH FRIES..</p>
+
+
+                            <div class="item_list">
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">TUNA MELT<br><small>tomato, swiss, honey wheat</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">12</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">BLT<br><small>bacon, lettuce, tomato, challah</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+
+                                    <div class="item_price">12</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">REUBEN<br><small>sauerkraut, swiss, thousand island</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">16</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">CORNED BEEF SPECIAL<br><small>coleslaw, swiss, russian dressing</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">14</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">TURKEY CLUB<br><small>bacon, lettuce, tomato, sourdough</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+                                    <div class="item_price">18</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">PASTRAMI TRIPLE DECKER<br><small>mayo, tomato, bacon</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">18</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">BRISKET & CARROTS<br><small>horseradish, aioli, corn rye</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">12</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">ROAST BEEF SPECIAL<br><small>watercress, horseradish, sour cream</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">12</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="breakfast--anytime">
+                            <h1>
+                                Butcher Sandwiches
+                            </h1>
+                            <p>HANDCUT SERVED WITH MUSTARD..</p>
+                            <div class="item_list">
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">PASTRAMI&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">16</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">CORNED BEEF&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">14</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">TURKEY PASTRAMI&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">14</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">BRISKET&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">12</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">ROAST BEEF&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">12</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="inner_box_one">
+                            <h1>Breads</h1>
+                            <p class="text-center">corn rye, deli rye, sourdough, honey wheat, challah</p>
+                        </div>
+
+                        
+                    </div>
+                    <!-- section--one end -->
+
+
+                    <!-- section--two start -->
+                    <div class="section--two document">
+
+                        <!-- inner_box start -->
+                        <div class="inner_box">
+                            <div class="breakfast--anytime">
+                                <h1>Samuel's Towers</h1>          
+                                <p>all selections are served with a bagel, cream cheese, tomato, caper, cucumber and onion</p>
+                                <div class="item_list">
+                                    <div class="item_list">
+                                        <div class="items single_line">
+                                            <div class="item_title"><span class="item_title_span">SALMON SALAD&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                            <div class="item_price">12</div>
+                                        </div>
+                                        <div class="items single_line">
+                                            <div class="item_title"><span class="item_title_span">TUNA SALAD&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                            <div class="item_price">16</div>
+                                        </div>
+                                        <div class="items single_line">
+                                            <div class="item_title"><span class="item_title_span">WHITEFISH SALAD&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                            <div class="item_price">13</div>
+                                        </div>
+                                        <div class="items single_line">
+                                            <div class="item_title"><span class="item_title_span">EGG SALAD&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                            <div class="item_price">13</div>
+                                        </div>
+                                        <div class="items single_line">
+                                            <div class="item_title"><span class="item_title_span">PASTRAMI SALMON&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                            <div class="item_price">14</div>
+                                        </div>
+                                        <div class="items single_line">
+                                            <div class="item_title"><span class="item_title_span">NOVA LOX SALMON&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                            <div class="item_price">16</div>
+                                        </div>
+                                        <div class="items single_line">
+                                            <div class="item_title"><span class="item_title_span">SABLEFISH&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                            <div class="item_price">16</div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="breakfast--anytime">
+                                    <h1>Deluxe</h1>
+                                    <div class="item_list">
+                                        <div class="items double_line">
+                                            <div class="item_title"><span class="item_title_span">PICK TWO<br><small>CHOOSE FROM ABOVE</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                            <div class="item_price">28</div>
+                                        </div>
+                                        <div class="items double_line">
+                                            <div class="item_title"><span class="item_title_span">PICK FIVE<br><small>CHOOSE FROM ABOVE</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                            <div class="item_price">68</div>
+                                        </div>
+                                        <div class="items single_line">
+                                            <div class="item_title"><span class="item_title_span">PASTRAMI, PASTRAMI, PASTRAMI&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                            <div class="item_price">48</div>
+                                        </div>
+                                        <div class="items double_line">
+                                            <div class="item_title"><span class="item_title_span">DELUXE PASTRY BASKET<br><small>CHEF'S SELECTION OF SIX</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                            <div class="item_price">18</div>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- inner_box end -->
+
+                        <div class="breakfast--anytime">
+                            <div class="plates">
+                                <img src="https://static1.squarespace.com/static/621515dbc75b033440da17e0/t/62b2efc95fc2fd3f210295cb/1655893961966/retert.png">
+                            </div>
+                            <div class="breakfast--anytime">
+                                <h1>Caviar</h1>
+                                <p>add to any dish</p>
+
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">KALUGA&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">12/48</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">OSETRA&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">18/64</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">TROUT ROE&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">8/32</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="breakfast--anytime">
+
+                            <h1>Sides</h1>
+                            <div class="item_list">
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">FRIES&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">8</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">BREAKFAST POTATOES&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">8</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">PICKLES&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">4</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">HOT DOG&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">6</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">SIDE SALAD&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">6</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">AVOCADO&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">4</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">BACON&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">8</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">SAUSAGE&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">8</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">YOGURT & BERRIES&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">9</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">BIALY&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">3</div>
+                                </div>
+                                <div class="items single_line">
+                                    <div class="item_title"><span class="item_title_span">BAGEL&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">3</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">CREAM CHEESE<br><small>plain, veggie, smoked salmon, scallion</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">2</div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- section--two end -->
+
+                    <!-- section--three start -->
+                    <div class="section--three document">
+
+
+                        <div class="breakfast--anytime">
+                            <h1>Starters</h1>
+                            <div class="item_list">
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">TUNA TARTARE<br><small>olive oil, lemon</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">18</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">PIGS IN A BLANKET<br><small>mustard</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">16</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">AVOCADO TOAST<br><small>everything spice</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">14</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">POTATO LATKES<br><small>sour cream, apple sauce</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">10</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">PIEROGI<br><small>farmer's cheese, onion</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">12</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">KNISH<br><small>potato, onion</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">4</div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="breakfast--anytime">
+                            <h1>Salads</h1>
+                            <div class="item_list">
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">CAESAR<br><small>breadcrumb, anchovy, lemon</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">13</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">CHOPPED<br><small>chickpea, provolone, pepperoncini</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">14</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">COBB<br><small>chicken, bacon, avocado</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">10</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">GREEK<br><small>olive, tomato, feta</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">13</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">WALDORF<br><small>grape, walnut, lettucebread</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">15</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- inner_box_one start -->
+                        <div class="bagels inner_box_one" style="position: relative; margin-bottom: 3rem;">
+                            <div style="width: 80%;">
+                                <h1>Bagels</h1>
+                                <p class="text-center">poppy, sesame, everything, plain</p>
+                            </div>
+                            <div style="position: absolute;top: 0;right: 0;">
+                                <div class="bagels_image">
+                                    <img src="https://static1.squarespace.com/static/621515dbc75b033440da17e0/t/62b2f0513e49983621a57bcd/1655894097521/uiooewe.png">
+                                    <!-- inner_box_one end -->
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="breakfast--anytime">
+                            <h1>Plates</h1>
+                            <div class="item_list">
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">CHICKEN POT PIE<br><small>carrot, pea, puff pastry</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">21</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">FRIED CHICKEN<br><small>hot honey, slaw, cheddar biscuit</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">23</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">CHOPPED STEAK<br><small>mushrooms, onions, gravy</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">24</div>
+                                </div>
+                                <div class="items double_line">
+                                    <div class="item_title"><span class="item_title_span">BROOK TROUT<br><small>brown butter, lemon, caper</small>&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+
+                                    <div class="item_price">26</div>
+
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="bg_image_logo">
+                            <img src="https://static1.squarespace.com/static/621515dbc75b033440da17e0/t/62c54fa6afcda94c6b975936/1657098155081/Asset+8%40300x.png" class=""/>
+                        </div>
+
+                    </div>
+                    <!-- section--three end -->
+
+
+                </div>
+
+
+        </div>
+        <!-- Early Morning End -->
+
+    </div>
+</div>
